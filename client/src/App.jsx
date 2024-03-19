@@ -1,12 +1,10 @@
-
-import './App.css'
-
+import Navbar from './components/navbar'
 function App() {
 
   return (
-    <>
-      <h1 className='text-green-600'>hello</h1>
-    </>
+    <div className='bg-[#131619] h-screen py-3'>
+      <Navbar/>
+    </div>
   )
 }
 
