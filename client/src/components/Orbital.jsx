@@ -1,9 +1,9 @@
-import React from 'react'
+import Topbar from './Topbar'
 
 const Orbital = () => {
   return (
-    <div className='bg-red-500'>
-      <h1 className='text-white'>Orbital</h1>
+    <div>
+      <Topbar/>
     </div>
   )
 }

@@ -5,3 +5,6 @@
 .linear-gradient{
     background: linear-gradient(to right, rgba(215, 237, 237, 0.16),rgba(204, 235, 235, 0));
 }
+.gradient{
+    background: linear-gradient(to right, #D7EDED29,#CCEBEB00);
+}

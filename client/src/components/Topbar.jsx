@@ -3,10 +3,22 @@ import Share from "../../public/assets/share.png";
 import Edit from "../../public/assets/edit.png";
 import File from "../../public/assets/file.png";
 import Artificium from "../../public/assets/artificium.png";
-import Comment from "../../public/assets/comment-circle.png"
+import Comment from "../../public/assets/comment-circle.png";
+import { Outlet, useNavigate } from "react-router-dom";
+import Dialog from "./Dialog";
 const Topbar = () => {
+  const navigate = useNavigate();
+  const handleArtificiumClick = () => {
+    navigate('/');
+  };
+  const handleChatClick = () => {
+    navigate('/chat');
+  };
+  const handleLibraryClick = () => {
+    navigate('/library');
+  };
   return (
-    <div className="w-[77%] h-[20%] bg-black ml-[300px] px-5 rounded-lg absolute top-2  pt-2">
+    <div className="w-[77%] h-[20%] bg-black ml-[22%] px-5 rounded-lg absolute top-2  pt-2 z-50">
     <ul className="w-full">
     <li className="flex justify-between">
       <h1 className='text-white text-2xl'>Orbital Oddysey</h1>
@@ -16,25 +28,25 @@ const Topbar = () => {
             <img src={Share} className="w-[15px] h-[15px]" alt="share" />
             <h3 className="text-gray-700">Share</h3>
             </li>
-            <li className="p-2 linear-gradient border border-[#131620] rounded-md">
+            <li className="p-1 bg-[#1A1D21] border border-[#131620] rounded-md">
             <img src={Edit} alt="edit" />
             </li>
         </li>
         </li>
         <li><p className='text-gray-500 pb-5'>Marketing Campaign for a new TV series Launch</p></li>
       </ul>
-      <ul className="flex items-center gap-28 border-t border-[#131620] pt-3">
-        <li className="flex  gap-2">
+      <ul className="flex items-center gap-10 border-t border-[#131620] pt-3">
+        <li className="flex  gap-2 cursor-pointer">
             <img src={Artificium} alt="art" />
-            <h2 className="text-white">Artificium</h2>
+            <h2 onClick={handleArtificiumClick} className="text-white">Artificium</h2>
         </li> 
-        <li className="flex  gap-2">
+        <li className="flex  gap-2 cursor-pointer">
             <img src={Comment} alt="share" />
-            <h2 className="text-white">Chat</h2>
+            <h2 onClick={handleChatClick} className="text-white">Chat</h2>
         </li>
-        <li className="flex gap-2 ">
+        <li className="flex gap-2 cursor-pointer ">
             <img src={File} alt="file" />
-            <h2 className="text-white">Library</h2>
+            <h2 onClick={handleLibraryClick} className="text-white">Library</h2>
         </li>
       </ul>
     </div>
