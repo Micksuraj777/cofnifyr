@@ -8,7 +8,7 @@ import Hero from "../../public/assets/hero.png";
 import Image from "../../public/assets/image.svg";
 import Audio from "../../public/assets/audio.svg";
 import DropDown from "./DropDown";
-// import Dialog from "./Dialog";
+
 const Artificium = () => {
   const fruits = [
     { name: 'UI wire frame', image:Left },
@@ -17,7 +17,7 @@ const Artificium = () => {
     { name: 'Brand guidelines', image: Left },
   ];
   return (
-    <div className="absolute ml-[22%] top-44 w-[77%] overflow-y-auto max-h-[73%]">
+    <div className="absolute ml-[22%] top-44 w-[77%] overflow-y-auto max-h-[73%] bottom-20">
       <div className="w-full">
       <h1 className="text-white text-center text-2xl mb-3">Innovation Starter Pack</h1>
       <p className="text-gray-400 text-center">Kickstart your innovation with our comprehensive selection of predefined prompts</p>
@@ -149,7 +149,6 @@ const Artificium = () => {
           <li className="flex gap-5">
           <button className="bg-[#1A1D21] text-gray-400 px-2 py-1 rounded-lg mt-3">Regenerate response</button>
           <DropDown />
-          {/* <Dialog/> */}
           </li>
         </li>
       </ul>
