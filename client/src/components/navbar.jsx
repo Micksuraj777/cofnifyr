@@ -10,9 +10,17 @@ import Add from "../../public/assets/add.png";
 import Triangle from "../../public/assets/traiangle.png";
 import Hero from "../../public/assets/hero.png";
 import Cog from "../../public/assets/cog.png";
-const navbar = () => {
+import Digital from "./Digital";
+import Social from "./Social";
+import Orbital from "./Orbital";
+import Brand from "./Brand";
+
+import { Link } from 'react-router-dom';
+const Navbar = () => {
+  
   return (
-    <div className="bg-black w-[300px] h-[645px] ml-2 rounded-lg">
+    <div className=" w-[20%] h-screen ml-2 pt-2">
+      <div className="bg-black h-[645px] rounded-lg">
       <ul className="flex justify-between  items-center pt-3 px-6 border-[#131619] border-b">
         <ul className="flex gap-3 pb-6">
           <li>
@@ -27,24 +35,24 @@ const navbar = () => {
           <img src={Arrow} alt="arrow" />
         </li>
       </ul>
-      <h1 className="pl-6 text-gray-500 mb-7 mt-3">GENERAL</h1>
+      <h1 className="pl-6 text-gray-500 mb-5 mt-3">GENERAL</h1>
       <ul className="px-6 border-b border-[#131619]">
-        <li className="flex justify-between items-center mb-7 cursor-pointer">
+        <li className="flex justify-between items-center pb-5 cursor-pointer">
           <li className="flex item-center">
           <img src={Search} alt="search" className="w-[20px] h-[20px]"/>
-          <h2 className="text-white ml-6">Search</h2>
+          <h2 className="text-white pl-6">Search</h2>
           </li>
           <span className="linear-gradient p-1 border border-[#131619] rounded-md">
           <img src={S} alt="s" className="w-[20px]"/>
           </span>
         </li>
-        <li className="flex gap-6 items-center mb-10 cursor-pointer">
+        <li className="flex gap-6 items-center pb-5 cursor-pointer">
           <img src={Folder} alt="folder" />
           <h2 className="text-white">Billing</h2>
         </li>
       </ul>
-      <h1 className="pl-6 text-gray-500 mb-7 mt-3">PROJECTS</h1>
-      <ul className="px-6 mb-9">
+      <h1 className="pl-6 text-gray-500 mb-5 mt-3">PROJECTS</h1>
+      <ul className="px-6 pb-5">
         <li className="flex gap-3 mb-4 items-center cursor-pointer">
           <img src={Square} alt="sq" className="w-[20px] h-[20px]" />
           <h2 className="text-white">Orbital Oddysey</h2>
@@ -66,7 +74,7 @@ const navbar = () => {
           <h2 className="text-gray-500">Add new project</h2>
         </li>
       </ul>
-      <ul className="p-3 flex linear-gradient justify-between items-center rounded-2xl mx-3 border border-[#131619]">
+      <ul className="p-3 flex mt-10 linear-gradient justify-between items-center rounded-2xl mx-3 border border-[#131619]">
         <li className="flex items-center">
         <img src={Hero} alt="hero" className="items-center"/>
         <li>
@@ -79,7 +87,8 @@ const navbar = () => {
         </li>
       </ul>
     </div>
+    </div>
   );
 };
 
-export default navbar;
+export default Navbar;
