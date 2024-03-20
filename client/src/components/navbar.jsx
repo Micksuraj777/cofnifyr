@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Avatar from "../../public/assets/avatar.png";
 import Arrow from "../../public/assets/arrow.png";
 import Search from "../../public/assets/search.png";
@@ -11,11 +11,16 @@ import Add from "../../public/assets/add.png";
 import Triangle from "../../public/assets/traiangle.png";
 import Hero from "../../public/assets/hero.png";
 import Cog from "../../public/assets/cog.png";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [selectedItem, setSelectedItem] = useState(null);
+
+  useEffect(() => {
+    setSelectedItem(location.pathname);
+  }, [location]);
 
   const handleItemClick = (route) => {
     setSelectedItem(route);

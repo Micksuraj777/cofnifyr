@@ -22,23 +22,23 @@ const Artificium = () => {
       <h1 className="text-white text-center text-2xl mb-3">Innovation Starter Pack</h1>
       <p className="text-gray-400 text-center">Kickstart your innovation with our comprehensive selection of predefined prompts</p>
       <ul className="flex justify-around mt-5">
-        <li className=""><div className="ml-5 mb-3 w-14 h-14 p-4 gradient rounded-full border border-[#1A1D21]"><img src={Bulb} alt="bulb" className=" w-full "/></div>
+        <li className=""><div className="ml-5 mb-3 w-14 h-14 p-4 gradient rounded-full border border-[#1A1D21]"><img src={Circle} alt="bulb" className=" w-full "/></div>
         <h2 className="text-white ">Creative Assets</h2>
         </li>
-        <li className=""><div className="ml-5 mb-3 w-14 h-14 p-4 gradient rounded-full border border-[#1A1D21]"><img src={Circle} alt="circle" className=" w-full   "/></div>
+        <li className=""><div className="ml-5 mb-3 w-14 h-14 p-4 pt-5 gradient rounded-full border border-[#1A1D21]"><img src={Code} alt="circle" className=" w-full   "/></div>
         <h2 className="text-white ">Developer Tool</h2>
         </li>
         <li className=""><div className="ml-5 mb-3 w-14 h-14 p-4 gradient rounded-full border border-[#1A1D21]"><img src={Pencil} alt="pencil" className=" w-full  "/></div>
         <h2 className="text-white ">Content Creation</h2>
         </li>
-        <li className=""><div className="ml-5 mb-3 w-14 h-14 p-4 gradient rounded-full border border-[#1A1D21]"><img src={Code} alt="code" className=" w-full  "/></div>
+        <li className=""><div className="ml-5 mb-3 w-14 h-14 p-4 gradient rounded-full pt-3 border border-[#1A1D21]"><img src={Bulb} alt="code" className=" w-full  "/></div>
         <h2 className="text-white ">Idea Generation</h2>
         </li>
       </ul>
       <ul className="flex justify-around mt-5">
         <li>
         {fruits.map((fruit, index) => (
-          <li key={index} className="flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
+          <li key={index} className="cursor-pointer flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
             <h2 className="text-white">{fruit.name}</h2>
             <img src={fruit.image} alt={fruit.name} className="w-[15px] h-[15px]"/>
           </li>
@@ -46,7 +46,7 @@ const Artificium = () => {
         </li>
         <li>
         {fruits.map((fruit, index) => (
-          <li key={index} className="flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
+          <li key={index} className="cursor-pointer flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
             <h2 className="text-white">{fruit.name}</h2>
             <img src={fruit.image} alt={fruit.name} className="w-[15px] h-[15px]"/>
           </li>
@@ -54,7 +54,7 @@ const Artificium = () => {
         </li>
         <li>
         {fruits.map((fruit, index) => (
-          <li key={index} className="flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
+          <li key={index} className="cursor-pointer flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
             <h2 className="text-white">{fruit.name}</h2>
             <img src={fruit.image} alt={fruit.name} className="w-[15px] h-[15px]"/>
           </li>
@@ -62,7 +62,7 @@ const Artificium = () => {
         </li>
         <li>
         {fruits.map((fruit, index) => (
-          <li key={index} className="flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
+          <li key={index} className="cursor-pointer flex justify-between w-[200px] p-3 items-center linear-gradient mb-2 border border-[#1A1D21] rounded-lg ">
             <h2 className="text-white">{fruit.name}</h2>
             <img src={fruit.image} alt={fruit.name} className="w-[15px] h-[15px]"/>
           </li>
@@ -120,27 +120,27 @@ const Artificium = () => {
           </li>
           <h2 className="text-gray-500 mb-5">Okay,let's explore some options related to the spaceship.How are some things I can do for you:</h2>
           <li className="flex gap-5">
-            <li className="gradient border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
+            <li className="gradient cursor-pointer border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
               <img src={Image} alt="avatar" className="pb-4 w-5" />
               <h3 className="text-white">Image</h3>
               <h3 className="text-white">Generation</h3>
             </li>
-            <li className="gradient border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
+            <li className="gradient cursor-pointer border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
               <img src={Code} alt="avatar" className="pb-4 w-7"/>
               <h3 className="text-white">Code</h3>
               <h3 className="text-white">engineering</h3>
             </li>
-            <li className="gradient border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
+            <li className="gradient cursor-pointer border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
               <img src={Pencil} alt="avatar" className="pb-4 w-5"/>
               <h3 className="text-white">Content</h3>
               <h3 className="text-white">creation</h3>
             </li>
-            <li className="gradient border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
+            <li className="gradient cursor-pointer border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
               <img src={Bulb} alt="avatar" className="pb-4 w-5"/>
               <h3 className="text-white">Idea</h3>
               <h3 className="text-white">generation</h3>
             </li>
-            <li className="gradient border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
+            <li className="gradient cursor-pointer border border-[#1A1D21] p-3 pr-10 rounded-lg w-[150px]">
               <img src={Audio} alt="avatar" className="pb-4 w-5"/>
               <h3 className="text-white">Audio/Video</h3>
               <h3 className="text-white">creation</h3>
