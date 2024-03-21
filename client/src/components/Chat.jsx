@@ -1,5 +1,5 @@
 
-import Navbar from './Navbar'
+import Navbar from './navbar'
 import Chatbar from './Chatbar'
 import Topbar from './Topbar'
 
