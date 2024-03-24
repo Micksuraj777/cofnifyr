@@ -4,7 +4,7 @@ import Chatbar from './components/Chatbar'
 import Digital from './components/Digital';
 import Orbital from './components/Orbital';
 import Social from './components/Social';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Artificium from './components/Artificium';
 import Chat from './components/Chat';
 import Library from './components/Library';

@@ -6,7 +6,6 @@ import File from "../../public/assets/file.png";
 import Artificium from "../../public/assets/artificium.png";
 import Comment from "../../public/assets/comment-circle.png";
 import { useNavigate,useLocation } from "react-router-dom";
-import Dialog from "./Dialog";
 const Topbar = () => {
   const location = useLocation();
   const [selectedItem, setSelectedItem] = useState(null);
